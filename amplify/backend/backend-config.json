@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "kilsakisa012891a1": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
