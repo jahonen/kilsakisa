@@ -72,7 +72,7 @@ function App() {
         value={formData.distance}
       />
       <input
-        onChange={e => setFormData({ ...formData, 'description': e.target.value})}
+        onChange={e => setFormData({ ...formData, 'teamsize': e.target.value})}
         placeholder="Note teamsize"
         value={formData.teamsize}
       />
