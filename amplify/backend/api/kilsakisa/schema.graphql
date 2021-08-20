@@ -1,4 +1,4 @@
-type Note @model {
+type Note @model @auth(rules: [{allow: private}]) {
   id: ID!
   name: String!
   description: String
@@ -6,3 +6,4 @@ type Note @model {
   teamsize: Int!
   image: String
 }
+ 
