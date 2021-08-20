@@ -37,7 +37,7 @@ function App() {
   }
 
   async function createNote() {
-    if (!formData.name || !formData.description) return;
+    if (!formData.description) return;
     await API.graphql({ query: createNoteMutation, variables: { input: formData } });
     if (formData.image) {
       const image = await Storage.get(formData.image);
